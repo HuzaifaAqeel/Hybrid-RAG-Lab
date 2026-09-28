@@ -1,0 +1,12 @@
+# Core RAG stack (embedded Milvus via milvus-lite's native engine)
+milvus-lite>=3.2
+sentence-transformers>=3.0
+langchain-core>=0.3
+streamlit>=1.40
+openai>=1.0
+python-dotenv>=1.0.1
+pytest>=8.0
+
+# sentence-transformers pulls in torch (with CUDA wheels on PyPI).
+# For a much smaller CPU-only install, pre-install torch first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
